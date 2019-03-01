@@ -743,7 +743,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-55",
-					"items" : [ "ROBOTISBT-210-SPPDev", ",", "MBPro-OSSIA-Bluetooth-S", ",", "Uconnect-SerialCOM", ",", "MBPro-OSSIA-Bluetooth-S-1", ",", "MBPro-OSSIA-Bluetooth-P", ",", "MacProdeSergeBabkine-Bl", ",", "white-DevB", ",", "MBPro-OSSIA-Bluetooth-S-2", ",", "iPhoneCarolina-Wireless", ",", "Bluetooth-Incoming-Port", ",", "orange-DevB", ",", "MP-Bluetooth-Incoming-P", ",", "iPhonedeMathieu-Wireles", ",", "MBPro-OSSIA-Bluetooth-S-3", ",", "iPhonedeTanguy-Wireless", ",", "usbserial-ENXQOF37" ],
+					"items" : [ "ROBOTISBT-210-SPPDev", ",", "MBPro-OSSIA-Bluetooth-S", ",", "Uconnect-SerialCOM", ",", "MBPro-OSSIA-Bluetooth-S-1", ",", "MBPro-OSSIA-Bluetooth-P", ",", "MacProdeSergeBabkine-Bl", ",", "white-DevB", ",", "MBPro-OSSIA-Bluetooth-S-2", ",", "iPhoneCarolina-Wireless", ",", "Bluetooth-Incoming-Port", ",", "orange-DevB", ",", "MP-Bluetooth-Incoming-P", ",", "iPhonedeMathieu-Wireles", ",", "MBPro-OSSIA-Bluetooth-S-3", ",", "iPhonedeTanguy-Wireless" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1045,13 +1045,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 51.0, 230.0, 78.0, 22.0 ],
+					"patching_rect" : [ 51.0, 230.0, 61.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
 ,
 					"style" : "",
-					"text" : "coll patchCB"
+					"text" : "coll patch"
 				}
 
 			}
