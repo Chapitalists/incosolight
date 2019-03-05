@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
+		"rect" : [ 250.0, 123.0, 1372.0, 783.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,32 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 466.0, 532.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"linecount" : 15,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 215.0, 435.0, 50.0, 215.0 ],
+					"style" : "",
+					"text" : "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 0 0 26 0 30 0 0 0 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "number",
@@ -175,7 +201,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 796.0, 571.25, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "0 0"
+					"text" : "0 26"
 				}
 
 			}
@@ -260,9 +286,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 627.0, 349.75, 53.0, 24.0 ],
+					"patching_rect" : [ 627.0, 349.75, 53.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 85.5, 53.0, 24.0 ],
+					"presentation_rect" : [ 75.0, 85.5, 53.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -293,9 +319,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 869.0, 362.75, 57.0, 24.0 ],
+					"patching_rect" : [ 869.0, 362.75, 57.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 151.5, 51.0, 24.0 ],
+					"presentation_rect" : [ 77.0, 151.5, 51.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -307,10 +333,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 686.0, 349.75, 140.0, 22.0 ],
+					"patching_rect" : [ 686.0, 349.75, 140.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 25.0, 85.5, 38.0, 38.0 ],
+					"presentation_rect" : [ 25.0, 85.5, 38.0, 39.0 ],
 					"style" : "",
 					"text" : "circuit"
 				}
@@ -336,9 +362,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 874.0, 340.25, 172.0, 22.0 ],
+					"patching_rect" : [ 874.0, 340.25, 172.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.0, 151.5, 50.0, 22.0 ],
+					"presentation_rect" : [ 25.0, 151.5, 50.0, 23.0 ],
 					"style" : "",
 					"text" : "valeur"
 				}
@@ -433,9 +459,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 143.0, 21.0, 61.0, 19.0 ],
+					"patching_rect" : [ 143.0, 21.0, 61.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 134.0, 26.0, 54.0, 19.0 ],
+					"presentation_rect" : [ 134.0, 26.0, 54.0, 18.0 ],
 					"style" : "",
 					"text" : "v 0.0.1"
 				}
@@ -449,9 +475,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.0, 17.0, 105.0, 24.0 ],
+					"patching_rect" : [ 17.0, 17.0, 105.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.0, 21.0, 107.0, 24.0 ],
+					"presentation_rect" : [ 25.0, 21.0, 107.0, 23.0 ],
 					"style" : "",
 					"text" : "incosolight"
 				}
@@ -530,6 +556,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 1 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
@@ -560,6 +593,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 1 ],
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-24", 1 ],
 					"source" : [ "obj-2", 2 ]
 				}
@@ -568,6 +609,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
+					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -762,56 +804,55 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "serialSender.maxpat",
-				"bootpath" : "~/Workspace/incosolight",
+				"bootpath" : "~/Documents/Inconsolight/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "config.txt",
-				"bootpath" : "~/Workspace/incosolight",
+				"bootpath" : "~/Documents/Inconsolight/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "reorder.maxpat",
-				"bootpath" : "~/Workspace/incosolight",
+				"bootpath" : "~/Documents/Inconsolight/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "patch",
-				"bootpath" : "~/Workspace/incosolight",
+				"bootpath" : "~/Documents/Inconsolight/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "BCR2000.maxpat",
-				"bootpath" : "~/Workspace/incosolight",
+				"bootpath" : "~/Documents/Inconsolight/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FiltreBoutons.maxpat",
-				"bootpath" : "~/Workspace/Lechantdufilament/utils",
-				"patcherrelativepath" : "../Lechantdufilament/utils",
+				"bootpath" : "D:/User/Documents/Lechantdufilament/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "interface.txt",
-				"bootpath" : "~/Workspace/incosolight",
+				"name" : "interface",
+				"bootpath" : "~/Documents/Inconsolight/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "grosseBouse.maxpat",
-				"bootpath" : "~/Workspace/incosolight",
+				"bootpath" : "~/Documents/Inconsolight/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
