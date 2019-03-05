@@ -9,9 +9,9 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 248.0, 340.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -57,7 +57,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 615.5, 29.0, 41.0, 22.0 ],
-					"presentation_rect" : [ 613.0, 28.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "73 48"
 				}
@@ -71,7 +70,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 541.0, 29.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 541.0, 30.25, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "73 50"
 				}
@@ -177,7 +175,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 796.0, 571.25, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "42 50"
+					"text" : "0 0"
 				}
 
 			}
@@ -242,9 +240,9 @@
 				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 321.0, 368.0, 81.0, 22.0 ],
 					"style" : "",
 					"text" : "grosseBouse"
@@ -417,7 +415,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "serialSender.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 321.0, 629.0, 171.0, 51.0 ],
@@ -562,6 +560,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 1 ],
+					"source" : [ "obj-2", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -590,8 +595,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"source" : [ "obj-24", 0 ],
+					"watchpoint_flags" : 2,
+					"watchpoint_id" : 3
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-24", 0 ]
+					"source" : [ "obj-24", 1 ]
 				}
 
 			}
@@ -754,14 +768,21 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "patch",
+				"name" : "config.txt",
 				"bootpath" : "~/Workspace/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "config.txt",
+				"name" : "reorder.maxpat",
+				"bootpath" : "~/Workspace/incosolight",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "patch",
 				"bootpath" : "~/Workspace/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
@@ -779,6 +800,13 @@
 				"bootpath" : "~/Workspace/Lechantdufilament/utils",
 				"patcherrelativepath" : "../Lechantdufilament/utils",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "interface.txt",
+				"bootpath" : "~/Workspace/incosolight",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

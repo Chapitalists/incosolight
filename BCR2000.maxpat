@@ -76,19 +76,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1022.25, 511.5, 49.0, 22.0 ],
-					"style" : "",
-					"text" : "zl.rev"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "page",
 					"id" : "obj-11",
 					"index" : 2,
@@ -121,7 +108,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 1022.25, 595.0, 79.0, 22.0 ],
+					"patching_rect" : [ 1022.25, 580.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "unpack 1 1 1"
 				}
@@ -134,7 +121,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1022.25, 554.0, 51.0, 22.0 ],
+					"patching_rect" : [ 1022.25, 539.0, 51.0, 22.0 ],
 					"style" : "",
 					"text" : "$1 $2 1"
 				}
@@ -146,7 +133,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1016.25, 635.0, 95.0, 22.0 ],
+					"patching_rect" : [ 1016.25, 620.0, 95.0, 22.0 ],
 					"style" : "",
 					"text" : "ctlout BCR2000"
 				}
@@ -349,7 +336,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 685.571411, 135.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "42 50"
+					"text" : "0 0"
 				}
 
 			}
@@ -691,7 +678,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 524.5, 104.0, 74.0, 22.0 ],
 					"style" : "",
-					"text" : "3 89 1"
+					"text" : "0 1 1"
 				}
 
 			}
@@ -812,13 +799,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -911,7 +891,9 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-24", 0 ]
+					"source" : [ "obj-24", 0 ],
+					"watchpoint_flags" : 1,
+					"watchpoint_id" : 4
 				}
 
 			}
@@ -968,7 +950,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
+					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -1453,12 +1435,12 @@
 , 			{
 				"name" : "patchLCDF",
 				"default" : 				{
+					"accentcolor" : [ 0.556863, 0.556863, 0.556863, 1.0 ],
+					"fontface" : [ 3 ],
+					"fontsize" : [ 18.0 ],
 					"fontname" : [ "Helvetica Neue Bold" ],
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"fontface" : [ 3 ],
-					"accentcolor" : [ 0.556863, 0.556863, 0.556863, 1.0 ],
-					"fontsize" : [ 18.0 ]
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
