@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 5,
-			"architecture" : "x64",
+			"revision" : 6,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 250.0, 123.0, 1372.0, 808.0 ],
+		"rect" : [ 43.0, 79.0, 253.0, 304.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1080.0, 679.0, 41.0, 22.0 ],
-					"presentation_rect" : [ 1078.5, 676.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "32 $1"
 				}
@@ -70,7 +69,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1176.5, 728.0, 41.0, 22.0 ],
-					"presentation_rect" : [ 1177.0, 728.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "24 $1"
 				}
@@ -84,7 +82,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1187.0, 679.0, 41.0, 22.0 ],
-					"presentation_rect" : [ 1190.0, 682.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "16 $1"
 				}
@@ -1709,9 +1706,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 822.0, 349.75, 53.0, 25.0 ],
+					"patching_rect" : [ 822.0, 349.75, 53.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 85.5, 53.0, 25.0 ],
+					"presentation_rect" : [ 75.0, 85.5, 53.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -1729,9 +1726,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1064.0, 362.75, 57.0, 25.0 ],
+					"patching_rect" : [ 1064.0, 362.75, 57.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 151.5, 51.0, 25.0 ],
+					"presentation_rect" : [ 77.0, 151.5, 51.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -1743,10 +1740,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 881.0, 349.75, 140.0, 23.0 ],
+					"patching_rect" : [ 881.0, 349.75, 140.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 25.0, 85.5, 38.0, 39.0 ],
+					"presentation_rect" : [ 25.0, 85.5, 38.0, 38.0 ],
 					"style" : "",
 					"text" : "circuit"
 				}
@@ -1772,9 +1769,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1069.0, 340.25, 172.0, 23.0 ],
+					"patching_rect" : [ 1069.0, 340.25, 172.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.0, 151.5, 50.0, 23.0 ],
+					"presentation_rect" : [ 25.0, 151.5, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "valeur"
 				}
@@ -1839,9 +1836,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 143.0, 21.0, 61.0, 18.0 ],
+					"patching_rect" : [ 143.0, 21.0, 61.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 134.0, 26.0, 54.0, 18.0 ],
+					"presentation_rect" : [ 134.0, 26.0, 54.0, 19.0 ],
 					"style" : "",
 					"text" : "v 0.4"
 				}
@@ -1855,9 +1852,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.0, 17.0, 105.0, 23.0 ],
+					"patching_rect" : [ 17.0, 17.0, 105.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 25.0, 21.0, 107.0, 23.0 ],
+					"presentation_rect" : [ 25.0, 21.0, 107.0, 24.0 ],
 					"style" : "",
 					"text" : "incosolight"
 				}
@@ -2962,7 +2959,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 1 ],
-					"midpoints" : [ 211.166667, 221.0, 393.0, 221.0 ],
+					"midpoints" : [ 211.166672, 221.0, 393.0, 221.0 ],
 					"source" : [ "obj-64", 1 ]
 				}
 
@@ -3170,69 +3167,70 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "serialSender.maxpat",
-				"bootpath" : "~/Documents/Inconsolight/incosolight",
+				"bootpath" : "~/Workspace/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "config.txt",
-				"bootpath" : "~/Documents/Inconsolight/incosolight",
+				"bootpath" : "~/Workspace/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "reorder.maxpat",
-				"bootpath" : "~/Documents/Inconsolight/incosolight",
+				"bootpath" : "~/Workspace/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "patch",
-				"bootpath" : "~/Documents/Inconsolight/incosolight",
+				"bootpath" : "~/Workspace/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "BCR2000.maxpat",
-				"bootpath" : "~/Documents/Inconsolight/incosolight",
+				"bootpath" : "~/Workspace/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FiltreBoutons.maxpat",
-				"bootpath" : "D:/User/Documents/Lechantdufilament/utils",
+				"bootpath" : "~/Workspace/Lechantdufilament/utils",
+				"patcherrelativepath" : "../Lechantdufilament/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "grosseBouse.maxpat",
-				"bootpath" : "~/Documents/Inconsolight/incosolight",
+				"bootpath" : "~/Workspace/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "interface",
-				"bootpath" : "~/Documents/Inconsolight/incosolight",
+				"bootpath" : "~/Workspace/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "groups",
-				"bootpath" : "~/Documents/Inconsolight/incosolight",
+				"bootpath" : "~/Workspace/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mapper.maxpat",
-				"bootpath" : "~/Documents/Inconsolight/incosolight",
+				"bootpath" : "~/Workspace/incosolight",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
