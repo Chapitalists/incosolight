@@ -4,14 +4,14 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1372.0, 783.0 ],
+		"rect" : [ 42.0, 85.0, 1372.0, 783.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -38,12 +38,38 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 153.377853, 19.0, 79.0, 22.0 ],
+					"style" : "",
+					"text" : "pack 1 set 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "float" ],
+					"patching_rect" : [ 64.438927, 19.0, 73.0, 22.0 ],
+					"style" : "",
+					"text" : "unpack 1 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-42",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1245.0, 447.0, 155.0, 33.0 ],
+					"patching_rect" : [ 1245.0, 447.0, 155.0, 34.0 ],
 					"style" : "",
 					"text" : "INFO créer des objets à la volée"
 				}
@@ -51,7 +77,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "circuit value 0.-100.",
 					"id" : "obj-39",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -78,7 +104,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "circcuit value 1.-100.",
 					"id" : "obj-8",
 					"index" : 0,
 					"maxclass" : "outlet",
@@ -3712,6 +3738,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 2 ],
+					"source" : [ "obj-15", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"midpoints" : [ 25.5, 202.0, 85.0, 202.0, 85.0, 163.0, 79.0, 163.0, 79.0, 103.0, 827.5, 103.0 ],
 					"source" : [ "obj-150", 0 ]
@@ -3787,6 +3827,13 @@
 					"destination" : [ "obj-8", 0 ],
 					"midpoints" : [ 722.450256, 208.0, 766.0, 208.0, 766.0, 259.0, 827.5, 259.0 ],
 					"source" : [ "obj-159", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -4492,7 +4539,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -5502,86 +5549,86 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-74" : [ "live.dial[133]", "44", 0 ],
-			"obj-92" : [ "live.dial[76]", "76", 0 ],
-			"obj-34" : [ "live.dial[163]", "14", 0 ],
-			"obj-55" : [ "live.dial[154]", "22", 0 ],
-			"obj-80" : [ "live.dial[139]", "38", 0 ],
-			"obj-98" : [ "live.dial[115]", "70", 0 ],
-			"obj-63" : [ "live.dial[124]", "55", 0 ],
-			"obj-30" : [ "live.dial[159]", "18", 0 ],
-			"obj-103" : [ "live.dial[48]", "65", 0 ],
-			"obj-27" : [ "live.dial[168]", "9", 0 ],
-			"obj-48" : [ "live.dial[147]", "30", 0 ],
-			"obj-18" : [ "live.dial[169]", "8", 0 ],
-			"obj-73" : [ "live.dial[132]", "45", 0 ],
-			"obj-91" : [ "live.dial[86]", "77", 0 ],
-			"obj-19" : [ "live.dial[170]", "7", 0 ],
-			"obj-28" : [ "live.dial[157]", "20", 0 ],
-			"obj-25" : [ "live.dial[176]", "1", 0 ],
-			"obj-33" : [ "live.dial[162]", "15", 0 ],
-			"obj-54" : [ "live.dial[153]", "24", 0 ],
-			"obj-101" : [ "live.dial[40]", "67", 0 ],
-			"obj-20" : [ "live.dial[171]", "6", 0 ],
-			"obj-60" : [ "live.dial[122]", "58", 0 ],
-			"obj-106" : [ "live.dial[118]", "63", 0 ],
-			"obj-79" : [ "live.dial[138]", "39", 0 ],
-			"obj-97" : [ "live.dial[114]", "71", 0 ],
-			"obj-62" : [ "live.dial[123]", "56", 0 ],
-			"obj-21" : [ "live.dial[172]", "5", 0 ],
-			"obj-22" : [ "live.dial[173]", "4", 0 ],
-			"obj-87" : [ "live.dial[146]", "31", 0 ],
-			"obj-90" : [ "live.dial[39]", "78", 0 ],
-			"obj-72" : [ "live.dial[29]", "46", 0 ],
-			"obj-23" : [ "live.dial[174]", "2", 0 ],
-			"obj-68" : [ "live.dial[129]", "50", 0 ],
-			"obj-32" : [ "live.dial[161]", "16", 0 ],
-			"obj-59" : [ "live.dial[121]", "59", 0 ],
-			"obj-53" : [ "live.dial[152]", "25", 0 ],
-			"obj-100" : [ "live.dial[117]", "68", 0 ],
-			"obj-96" : [ "live.dial[68]", "73", 0 ],
-			"obj-61" : [ "live.dial[79]", "57", 0 ],
-			"obj-105" : [ "live.dial[50]", "62", 0 ],
-			"obj-78" : [ "live.dial[137]", "40", 0 ],
-			"obj-88" : [ "live.dial[26]", "80", 0 ],
-			"obj-86" : [ "live.dial[145]", "33", 0 ],
-			"obj-89" : [ "live.dial[38]", "79", 0 ],
-			"obj-71" : [ "live.dial[28]", "47", 0 ],
-			"obj-67" : [ "live.dial[128]", "51", 0 ],
-			"obj-58" : [ "live.dial[120]", "60", 0 ],
-			"obj-52" : [ "live.dial[151]", "26", 0 ],
-			"obj-31" : [ "live.dial[160]", "17", 0 ],
-			"obj-95" : [ "live.dial[78]", "72", 0 ],
-			"obj-77" : [ "live.dial[136]", "41", 0 ],
-			"obj-104" : [ "live.dial[49]", "64", 0 ],
-			"obj-85" : [ "live.dial[144]", "32", 0 ],
-			"obj-70" : [ "live.dial[131]", "48", 0 ],
-			"obj-83" : [ "live.dial[142]", "35", 0 ],
-			"obj-66" : [ "live.dial[127]", "53", 0 ],
-			"obj-29" : [ "live.dial[158]", "19", 0 ],
-			"obj-102" : [ "live.dial[41]", "66", 0 ],
-			"obj-107" : [ "live.dial[119]", "61", 0 ],
-			"obj-26" : [ "live.dial[167]", "10", 0 ],
-			"obj-51" : [ "live.dial[150]", "27", 0 ],
-			"obj-76" : [ "live.dial[135]", "43", 0 ],
-			"obj-94" : [ "live.dial[88]", "74", 0 ],
-			"obj-84" : [ "live.dial[143]", "34", 0 ],
-			"obj-24" : [ "live.dial[175]", "3", 0 ],
-			"obj-57" : [ "live.dial[156]", "21", 0 ],
-			"obj-36" : [ "live.dial[165]", "13", 0 ],
-			"obj-69" : [ "live.dial[130]", "49", 0 ],
-			"obj-65" : [ "live.dial[126]", "52", 0 ],
-			"obj-82" : [ "live.dial[141]", "36", 0 ],
-			"obj-50" : [ "live.dial[149]", "28", 0 ],
-			"obj-37" : [ "live.dial[166]", "11", 0 ],
-			"obj-93" : [ "live.dial[66]", "75", 0 ],
-			"obj-75" : [ "live.dial[134]", "42", 0 ],
 			"obj-56" : [ "live.dial[155]", "23", 0 ],
-			"obj-35" : [ "live.dial[164]", "12", 0 ],
+			"obj-86" : [ "live.dial[145]", "33", 0 ],
+			"obj-76" : [ "live.dial[135]", "43", 0 ],
+			"obj-106" : [ "live.dial[118]", "63", 0 ],
+			"obj-66" : [ "live.dial[127]", "53", 0 ],
+			"obj-88" : [ "live.dial[26]", "80", 0 ],
+			"obj-32" : [ "live.dial[161]", "16", 0 ],
+			"obj-94" : [ "live.dial[88]", "74", 0 ],
+			"obj-54" : [ "live.dial[153]", "24", 0 ],
+			"obj-84" : [ "live.dial[143]", "34", 0 ],
+			"obj-74" : [ "live.dial[133]", "44", 0 ],
+			"obj-104" : [ "live.dial[49]", "64", 0 ],
 			"obj-64" : [ "live.dial[125]", "54", 0 ],
+			"obj-92" : [ "live.dial[76]", "76", 0 ],
+			"obj-82" : [ "live.dial[141]", "36", 0 ],
+			"obj-52" : [ "live.dial[151]", "26", 0 ],
+			"obj-37" : [ "live.dial[166]", "11", 0 ],
+			"obj-102" : [ "live.dial[41]", "66", 0 ],
+			"obj-62" : [ "live.dial[123]", "56", 0 ],
+			"obj-72" : [ "live.dial[29]", "46", 0 ],
+			"obj-26" : [ "live.dial[167]", "10", 0 ],
+			"obj-90" : [ "live.dial[39]", "78", 0 ],
+			"obj-27" : [ "live.dial[168]", "9", 0 ],
+			"obj-18" : [ "live.dial[169]", "8", 0 ],
+			"obj-50" : [ "live.dial[149]", "28", 0 ],
+			"obj-30" : [ "live.dial[159]", "18", 0 ],
+			"obj-80" : [ "live.dial[139]", "38", 0 ],
+			"obj-35" : [ "live.dial[164]", "12", 0 ],
+			"obj-19" : [ "live.dial[170]", "7", 0 ],
+			"obj-100" : [ "live.dial[117]", "68", 0 ],
+			"obj-70" : [ "live.dial[131]", "48", 0 ],
+			"obj-60" : [ "live.dial[122]", "58", 0 ],
+			"obj-20" : [ "live.dial[171]", "6", 0 ],
+			"obj-87" : [ "live.dial[146]", "31", 0 ],
+			"obj-96" : [ "live.dial[68]", "73", 0 ],
+			"obj-77" : [ "live.dial[136]", "41", 0 ],
+			"obj-57" : [ "live.dial[156]", "21", 0 ],
+			"obj-21" : [ "live.dial[172]", "5", 0 ],
+			"obj-28" : [ "live.dial[157]", "20", 0 ],
+			"obj-97" : [ "live.dial[114]", "71", 0 ],
+			"obj-48" : [ "live.dial[147]", "30", 0 ],
+			"obj-107" : [ "live.dial[119]", "61", 0 ],
+			"obj-78" : [ "live.dial[137]", "40", 0 ],
+			"obj-67" : [ "live.dial[128]", "51", 0 ],
+			"obj-33" : [ "live.dial[162]", "15", 0 ],
+			"obj-22" : [ "live.dial[173]", "4", 0 ],
+			"obj-58" : [ "live.dial[120]", "60", 0 ],
+			"obj-95" : [ "live.dial[78]", "72", 0 ],
+			"obj-98" : [ "live.dial[115]", "70", 0 ],
+			"obj-68" : [ "live.dial[129]", "50", 0 ],
+			"obj-23" : [ "live.dial[174]", "2", 0 ],
+			"obj-24" : [ "live.dial[175]", "3", 0 ],
+			"obj-75" : [ "live.dial[134]", "42", 0 ],
+			"obj-85" : [ "live.dial[144]", "32", 0 ],
+			"obj-55" : [ "live.dial[154]", "22", 0 ],
+			"obj-65" : [ "live.dial[126]", "52", 0 ],
+			"obj-105" : [ "live.dial[50]", "62", 0 ],
+			"obj-25" : [ "live.dial[176]", "1", 0 ],
+			"obj-31" : [ "live.dial[160]", "17", 0 ],
+			"obj-93" : [ "live.dial[66]", "75", 0 ],
+			"obj-83" : [ "live.dial[142]", "35", 0 ],
+			"obj-53" : [ "live.dial[152]", "25", 0 ],
+			"obj-63" : [ "live.dial[124]", "55", 0 ],
+			"obj-73" : [ "live.dial[132]", "45", 0 ],
+			"obj-103" : [ "live.dial[48]", "65", 0 ],
+			"obj-91" : [ "live.dial[86]", "77", 0 ],
 			"obj-81" : [ "live.dial[140]", "37", 0 ],
+			"obj-51" : [ "live.dial[150]", "27", 0 ],
+			"obj-36" : [ "live.dial[165]", "13", 0 ],
+			"obj-71" : [ "live.dial[28]", "47", 0 ],
+			"obj-61" : [ "live.dial[79]", "57", 0 ],
+			"obj-101" : [ "live.dial[40]", "67", 0 ],
+			"obj-89" : [ "live.dial[38]", "79", 0 ],
+			"obj-49" : [ "live.dial[148]", "29", 0 ],
+			"obj-79" : [ "live.dial[138]", "39", 0 ],
+			"obj-29" : [ "live.dial[158]", "19", 0 ],
+			"obj-34" : [ "live.dial[163]", "14", 0 ],
+			"obj-69" : [ "live.dial[130]", "49", 0 ],
 			"obj-99" : [ "live.dial[116]", "69", 0 ],
-			"obj-49" : [ "live.dial[148]", "29", 0 ]
+			"obj-59" : [ "live.dial[121]", "59", 0 ]
 		}
 ,
 		"dependency_cache" : [  ],
